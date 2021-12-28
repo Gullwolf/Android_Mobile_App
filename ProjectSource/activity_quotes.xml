@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="newsButtonOnClick"
+                android:text="@string/news"
+                android:textColor="#000000">
+
+            </Button>
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="stockButtonOnClick"
+                android:text="@string/stocks"
+                android:textColor="#000000">
+
+            </Button>
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:clickable="false"
+                android:elevation="2sp"
+                android:onClick="quotesButtonOnClick"
+                android:text="@string/quotes"
+                android:textColor="#FFFFFF"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_gravity="center"
+                android:padding="5sp"
+                android:text="@string/daily_quote_title"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/quoteOfTheDay"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:padding="50sp"
+                android:text="@string/daily_quote"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/quoteOfTheDayAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:padding="5sp"
+                android:text="@string/daily_quote_author"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp">
+
+            </Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="75sp"
+                    android:layout_height="30sp">
+
+                </Space>
+
+                <TextView
+                    android:layout_width="200sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:text="@string/random_quote_title"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:background="@drawable/ic_baseline_refresh_24"
+                    android:backgroundTint="#000000"
+                    android:gravity="center"
+                    android:onClick="getRandomQuote" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/randomQuoteText"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:padding="50sp"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/randomQuoteAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:padding="5sp"
+                android:textAlignment="center">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

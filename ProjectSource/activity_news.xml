@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/newsButton"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:clickable="true"
+                android:elevation="2sp"
+                android:onClick="refresh"
+                android:text="@string/news"
+                android:textColor="#FFFFFF">
+
+            </Button>
+
+            <Button
+                android:id="@+id/stockButton"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="stockButtonOnClick"
+                android:text="@string/stocks"
+                android:textColor="#000000">
+
+            </Button>
+
+            <Button
+                android:id="@+id/quoteButton"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="quotesButtonOnClick"
+                android:text="@string/quotes"
+                android:textColor="#000000">
+
+            </Button>
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_edit_24"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="preferencesButtonOnClick"></Button>
+
+        </LinearLayout>
+
+        <!-- A CardView that contains a TextView and an ImageView -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="888sp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- A CardView that contains a TextView and an ImageView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_story_1"
+                    android:layout_width="400sp"
+                    android:layout_height="200sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="11sp"
+                    app:cardCornerRadius="10sp"
+                    app:cardElevation="2sp"
+                    tools:ignore="MissingConstraints,OnClick"
+                    android:onClick="newsArticleOnClick">
+
+                    <include layout="@layout/card_story_1" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- A CardView that contains a TextView and an ImageView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_story_2"
+                    android:layout_width="400sp"
+                    android:layout_height="200sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="11sp"
+                    app:cardCornerRadius="10sp"
+                    app:cardElevation="2sp"
+                    tools:ignore="MissingConstraints,OnClick"
+                    android:onClick="newsArticleOnClick">
+
+                    <include layout="@layout/card_story_2" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- A CardView that contains a TextView and an ImageView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_story_3"
+                    android:layout_width="400sp"
+                    android:layout_height="200sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="11sp"
+                    app:cardCornerRadius="10sp"
+                    app:cardElevation="2sp"
+                    tools:ignore="MissingConstraints,OnClick"
+                    android:onClick="newsArticleOnClick">
+
+                    <include layout="@layout/card_story_3" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- A CardView that contains a TextView and an ImageView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_story_4"
+                    android:layout_width="400sp"
+                    android:layout_height="200sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="11sp"
+                    app:cardCornerRadius="10sp"
+                    app:cardElevation="2sp"
+                    tools:ignore="MissingConstraints,OnClick"
+                    android:onClick="newsArticleOnClick">
+
+                    <include layout="@layout/card_story_4" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

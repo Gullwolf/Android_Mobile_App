@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="newsButtonOnClick"
+                android:text="@string/news"
+                android:textColor="#000000">
+
+            </Button>
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="stockButtonOnClick"
+                android:text="@string/stocks"
+                android:textColor="#000000">
+
+            </Button>
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="quotesButtonOnClick"
+                android:text="@string/quotes"
+                android:textColor="#000000"></Button>
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_edit_24"
+                android:backgroundTint="#000000"
+                android:clickable="false"
+                android:elevation="-2sp"
+                android:onClick="preferencesButtonOnClick"></Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:text="@string/username"
+                    android:textAlignment="center"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/loginUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="11sp"
+                    android:cursorVisible="true"
+                    android:inputType="textAutoCorrect|textCapSentences"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:text="@string/password"
+                    android:textAlignment="center"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <EditText
+                    android:id="@+id/loginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="11sp"
+                    android:cursorVisible="true"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <Button
+                android:layout_width="75sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:onClick="loginButtonOnClick"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10sp"/>
+
+            <Button
+                android:layout_width="75sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:text="@string/signUp"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:onClick="signUpButtonOnClick"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

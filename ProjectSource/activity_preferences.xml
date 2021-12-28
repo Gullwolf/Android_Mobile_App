@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="newsButtonOnClick"
+                android:text="@string/news"
+                android:textColor="#000000">
+
+            </Button>
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="stockButtonOnClick"
+                android:text="@string/stocks"
+                android:textColor="#000000">
+
+            </Button>
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:elevation="-2sp"
+                android:onClick="quotesButtonOnClick"
+                android:text="@string/quotes"
+                android:textColor="#000000"></Button>
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_edit_24"
+                android:backgroundTint="#000000"
+                android:clickable="false"
+                android:elevation="-2sp"
+                android:onClick="preferencesButtonOnClick"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_gravity="center"
+                android:padding="5sp"
+                android:text="@string/preferences"
+                android:textAlignment="center"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp">
+
+            </Space>
+
+            <EditText
+                android:id="@+id/preferencesBox"
+                android:layout_width="wrap_content"
+                android:layout_height="500sp"
+                android:layout_gravity="center"
+                android:layout_margin="11sp"
+                android:cursorVisible="true"
+                android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                android:text="@string/edit_preferences"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+            android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal">
+
+                </Space>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="50sp"
+                android:layout_weight="0"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_save_24"
+                android:backgroundTint="#000000"
+                android:onClick="saveButtonOnClick"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="75sp"
+                android:layout_weight="0"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:onClick="logoutButtonOnClick"
+                android:gravity="center"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal">
+
+                </Space>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout></androidx.constraintlayout.widget.ConstraintLayout>
