@@ -291,7 +291,7 @@ class MainActivity : AppCompatActivity() {
             var preferences = preferenceString()
             println(preferences)
             var url =
-                "http://newsapi.org/v2/everything?q=($preferences)&apiKey=e9d729b9ada6453f87f90b6259994856"
+                "http://newsapi.org/v2/everything?q=($preferences)&apiKey="
             println(url)
             Ion.with(this)
                 .load(url)
@@ -303,7 +303,7 @@ class MainActivity : AppCompatActivity() {
                 }
         } else {
             Ion.with(this)
-                .load("http://newsapi.org/v2/top-headlines?country=gb&apiKey=e9d729b9ada6453f87f90b6259994856")
+                .load("http://newsapi.org/v2/top-headlines?country=gb&apiKey=")
                 .setHeader("user-agent", "insomnia/2020.4.1")
                 .asString()
                 .setCallback { ex, result ->
@@ -516,7 +516,7 @@ class MainActivity : AppCompatActivity() {
         val stockToSearch = searchBar.text
         Ion.with(this)
             .load("https://alpha-vantage.p.rapidapi.com/query?function=GLOBAL_QUOTE&symbol=$stockToSearch")
-            .setHeader("x-rapidapi-key", "c99f7f826bmsh06870449c42c88bp161799jsn0785cba64c71")
+            .setHeader("x-rapidapi-key", "")
             .setHeader("x-rapidapi-host", "alpha-vantage.p.rapidapi.com")
             .asString()
             .setCallback { ex, result ->
